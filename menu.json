@@ -1,184 +1,211 @@
 {
   "items": [
     {
-      "id": "s1",
-      "name": "Crispy Calamari",
-      "description": "Lightly battered squid rings with garlic aioli and fresh lemon",
-      "price": 399,
+      "id": "soup1",
+      "name": "Chicken Hot & Sour Soup",
+      "description": "Succulent meats and crisp vegetables dance in a bold, zesty broth, creating a symphony of tantalizing tastes",
+      "price": 215,
       "category": "Starters",
       "veg": false,
-      "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop"
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop"
     },
     {
-      "id": "s2",
-      "name": "Bruschetta Trio",
-      "description": "Classic tomato, mushroom tapenade, and roasted pepper on sourdough",
-      "price": 329,
-      "category": "Starters",
-      "veg": true,
-      "image": "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "s3",
-      "name": "Spicy Chicken Wings",
-      "description": "Crispy wings tossed in buffalo sauce with blue cheese dip",
-      "price": 449,
+      "id": "soup2",
+      "name": "Chicken Manchow Soup",
+      "description": "A hearty fusion of succulent meats and crisp vegetables in a robust, flavorful broth",
+      "price": 215,
       "category": "Starters",
       "veg": false,
-      "image": "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=400&h=300&fit=crop"
+      "image": "https://images.unsplash.com/photo-1588566565463-180a5b2090d2?w=400&h=300&fit=crop"
     },
     {
-      "id": "s4",
-      "name": "Loaded Nachos",
-      "description": "Crispy tortilla chips with cheese, jalapeños, sour cream & guacamole",
-      "price": 349,
+      "id": "soup3",
+      "name": "Veg Hot & Sour Soup",
+      "description": "Fresh vegetables harmonized in a zesty broth, delivering the perfect balance of heat and tanginess",
+      "price": 185,
       "category": "Starters",
       "veg": true,
-      "image": "https://images.unsplash.com/photo-1582169296194-e4d644c48063?w=400&h=300&fit=crop"
+      "image": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=400&h=300&fit=crop"
     },
     {
-      "id": "s5",
-      "name": "Prawn Tempura",
-      "description": "Japanese-style battered prawns with sweet chili sauce",
-      "price": 449,
-      "category": "Starters",
-      "veg": false,
-      "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "s6",
-      "name": "Mediterranean Hummus Platter",
-      "description": "House-made hummus with olives, feta, and warm pita bread",
-      "price": 299,
+      "id": "soup4",
+      "name": "Veg Manchow Soup",
+      "description": "A harmonious blend of fresh vegetables in a flavorful broth, infused with aromatic spices",
+      "price": 185,
       "category": "Starters",
       "veg": true,
-      "image": "https://images.unsplash.com/photo-1571070703993-67580c53b9b5?w=400&h=300&fit=crop"
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&h=300&fit=crop"
     },
     {
-      "id": "m1",
-      "name": "Truffle Mushroom Risotto",
-      "description": "Creamy arborio rice with wild mushrooms and truffle oil",
-      "price": 549,
-      "category": "Main Course",
-      "veg": true,
-      "image": "https://images.unsplash.com/photo-1476124369491-f23fdf5b1e98?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "m2",
-      "name": "Grilled Salmon Steak",
-      "description": "Atlantic salmon with lemon butter sauce, asparagus & mashed potatoes",
-      "price": 749,
-      "category": "Main Course",
-      "veg": false,
-      "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "m3",
-      "name": "Margherita Pizza",
-      "description": "Wood-fired pizza with San Marzano tomatoes, mozzarella & fresh basil",
-      "price": 449,
-      "category": "Main Course",
-      "veg": true,
-      "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "m4",
-      "name": "Lamb Rogan Josh",
-      "description": "Slow-cooked lamb in aromatic spices, served with naan and rice",
-      "price": 699,
-      "category": "Main Course",
-      "veg": false,
-      "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "m5",
-      "name": "Thai Green Curry",
-      "description": "Coconut-based curry with vegetables, tofu, and jasmine rice",
-      "price": 499,
-      "category": "Main Course",
-      "veg": true,
-      "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "b1",
-      "name": "Signature Cold Coffee",
-      "description": "Rich cold brew with vanilla ice cream and chocolate drizzle",
-      "price": 249,
-      "category": "Beverages",
-      "veg": true,
-      "image": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "b2",
-      "name": "Fresh Fruit Smoothie",
-      "description": "Blend of seasonal fruits, yogurt, and honey",
-      "price": 199,
-      "category": "Beverages",
-      "veg": true,
-      "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "b3",
-      "name": "Classic Mojito",
-      "description": "Refreshing mint, lime, and soda (Virgin or Regular)",
-      "price": 199,
-      "category": "Beverages",
-      "veg": true,
-      "image": "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "d1",
-      "name": "Chocolate Lava Cake",
-      "description": "Warm molten chocolate cake with vanilla bean ice cream",
-      "price": 299,
-      "category": "Desserts",
-      "veg": true,
-      "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "d2",
-      "name": "New York Cheesecake",
-      "description": "Creamy cheesecake with berry compote and whipped cream",
-      "price": 349,
-      "category": "Desserts",
-      "veg": true,
-      "image": "https://images.unsplash.com/photo-1533134242820-b25a0b70674e?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "d3",
-      "name": "Tiramisu",
-      "description": "Classic Italian dessert with espresso-soaked ladyfingers and mascarpone",
-      "price": 329,
-      "category": "Desserts",
-      "veg": true,
-      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "g1",
-      "name": "Gamer's Combo Platter",
-      "description": "Loaded fries, onion rings, mozzarella sticks & chicken nuggets",
-      "price": 399,
-      "category": "Gaming Snacks",
-      "veg": false,
-      "image": "https://images.unsplash.com/photo-1599146318054-63bfcd617c33?w=400&h=300&fit=crop"
-    },
-    {
-      "id": "g2",
-      "name": "Classic French Fries",
-      "description": "Crispy golden fries with choice of dips (cheese, garlic, peri-peri)",
-      "price": 199,
+      "id": "fries1",
+      "name": "Classic Salted Fries",
+      "description": "Crispy golden perfection on the outside, tender and fluffy on the inside, sprinkled with just the right amount of salt",
+      "price": 155,
       "category": "Gaming Snacks",
       "veg": true,
       "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop"
     },
     {
-      "id": "g3",
-      "name": "Paneer Tikka Bites",
-      "description": "Spiced cottage cheese cubes with mint chutney",
-      "price": 279,
+      "id": "fries2",
+      "name": "Peri-Peri Fries",
+      "description": "Crispy, golden fries dusted with a fiery blend of peri-peri spices, delivering a burst of bold flavor in every bite!",
+      "price": 175,
       "category": "Gaming Snacks",
       "veg": true,
+      "image": "https://images.unsplash.com/photo-1630431341973-02e1d44a8834?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "nachos1",
+      "name": "Classic Nachos",
+      "description": "Crispy tortilla chips generously loaded with melted cheese and fresh salsa",
+      "price": 205,
+      "category": "Gaming Snacks",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1582169296194-e4d644c48063?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "tandoori1",
+      "name": "Achari Paneer Tikka",
+      "description": "Cubes of paneer delicately spiced with achari (pickle) flavors, char-grilled to perfection",
+      "price": 365,
+      "category": "Main Course",
+      "veg": true,
       "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "tandoori2",
+      "name": "Afghani Chicken Tikka (6 Pieces)",
+      "description": "Succulent chicken pieces bathed in a rich, creamy marinade with hints of aromatic spices",
+      "price": 395,
+      "category": "Main Course",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "tandoori3",
+      "name": "Chicken Malai Tikka",
+      "description": "Creamy, melt-in-your-mouth chicken infused with aromatic spices and rich malai",
+      "price": 395,
+      "category": "Main Course",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "tandoori4",
+      "name": "Classic Chicken Tikka (6 Pieces)",
+      "description": "Succulent chicken pieces marinated in a blend of aromatic spices, char-grilled to perfection & served with mint chutney",
+      "price": 365,
+      "category": "Main Course",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "tandoori5",
+      "name": "Lahsuni Chicken Tikka (6 Pieces)",
+      "description": "Tender chicken pieces marinated in a garlic-infused blend of spices, char-grilled to perfection and served with mint chutney",
+      "price": 395,
+      "category": "Main Course",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "tandoori6",
+      "name": "Pahadi Paneer Tikka",
+      "description": "Succulent paneer cubes marinated in a vibrant green blend of cilantro, mint, and spices, char-grilled to perfection",
+      "price": 365,
+      "category": "Main Course",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "tandoori7",
+      "name": "Tandoori Chicken (4 Piece)",
+      "description": "Succulent chicken marinated in traditional Indian spices, char-grilled to perfection, and served with a side of mint chutney",
+      "price": 365,
+      "category": "Main Course",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "tandoori8",
+      "name": "Tandoori Kasundi Mushroom",
+      "description": "Plump mushrooms marinated in a rich blend of Indian spices, grilled to perfection, and served with a tantalizing mint chutney",
+      "price": 345,
+      "category": "Main Course",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1621510456681-2330135e5871?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "small1",
+      "name": "Basil Chicken Dry",
+      "description": "Succulent chicken stir-fried with aromatic basil leaves, creating a fragrant symphony of flavors",
+      "price": 405,
+      "category": "Starters",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "small2",
+      "name": "Chilli Chicken Dry",
+      "description": "Tender chicken bites wok-tossed with vibrant bell peppers and onions in a spicy, savory sauce",
+      "price": 385,
+      "category": "Starters",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1606491048164-ccc36b5e2c0a?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "small3",
+      "name": "Chilli Paneer Dry",
+      "description": "Succulent paneer cubes wok-tossed with vibrant bell peppers and onions in a spicy, flavorful sauce",
+      "price": 305,
+      "category": "Starters",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "small4",
+      "name": "Corns Salt N Pepper",
+      "description": "Golden corn kernels seasoned to perfection with a savory blend of salt and pepper, creating a delectable snack that is both satisfying and addictive",
+      "price": 305,
+      "category": "Gaming Snacks",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "small5",
+      "name": "Crispy Babycorn",
+      "description": "Tender baby corn coated in a light, crispy batter, perfectly fried to golden perfection",
+      "price": 305,
+      "category": "Starters",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1612892483236-52d32a0e0ac1?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "small6",
+      "name": "Garlic Chicken Dry",
+      "description": "Succulent chicken pieces stir-fried to perfection with fragrant garlic cloves",
+      "price": 385,
+      "category": "Starters",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "small7",
+      "name": "Honey Chilli Potato",
+      "description": "Crispy potato wedges tossed in a tantalizing blend of honey and chilli sauce, creating a harmonious balance of flavors",
+      "price": 265,
+      "category": "Gaming Snacks",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1639024471283-03518883512d?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "small8",
+      "name": "Short Put",
+      "description": "Jalapeno cheese balls, spicy mayo",
+      "price": 265,
+      "category": "Gaming Snacks",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1541529086526-db283c563270?w=400&h=300&fit=crop"
     }
   ]
 }
