@@ -125,5 +125,41 @@
 
     <script src="script.js"></script>
     <script src="menu.js"></script>
+
+    <!-- AI Chatbot (Flowise) -->
+    <script src="https://cdn.jsdelivr.net/gh/unknownfriend00007/beautiful-flowise-chat@c910b17/dist/chat.js"></script>
+    <script>
+        BeautifulFlowiseChat.init({
+            chatflowid: "a32ee1fe-b6bd-43e0-846b-d95b48a5ad6f",
+            apiHost: "https://ruvatron-flowhybrid-3.hf.space",
+
+            // Custom Theme (matched to MYSTERIA gold/navy)
+            theme: "custom",
+            primaryColor: "#d4af37",
+            primaryDarkColor: "#b8891a",
+            customUserMessageBg: "#faf8f5",
+            customUserMessageText: "#0f172a",
+            customChatBg: "#ffffff",
+
+            // Content
+            title: "MYSTERIA Assistant",
+            subtitle: "Menu • Orders • Help",
+            welcomeMessage: "Welcome to MYSTERIA! Ask about menu, prices, or how to order.",
+            placeholder: "Type your message...",
+            avatar: "🍽️",
+
+            // Features
+            enableStreaming: true,
+            enableMarkdown: true,
+            showTimestamp: true,
+
+            // Advanced
+            confirmOnReset: true,
+            maxMessages: 100,
+            requestTimeout: 30000,
+
+            debug: false
+        });
+    </script>
 </body>
 </html>
