@@ -1,0 +1,184 @@
+{
+  "items": [
+    {
+      "id": "s1",
+      "name": "Crispy Calamari",
+      "description": "Lightly battered squid rings with garlic aioli and fresh lemon",
+      "price": 399,
+      "category": "Starters",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "s2",
+      "name": "Bruschetta Trio",
+      "description": "Classic tomato, mushroom tapenade, and roasted pepper on sourdough",
+      "price": 329,
+      "category": "Starters",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "s3",
+      "name": "Spicy Chicken Wings",
+      "description": "Crispy wings tossed in buffalo sauce with blue cheese dip",
+      "price": 449,
+      "category": "Starters",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1608039755401-742074f0548d?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "s4",
+      "name": "Loaded Nachos",
+      "description": "Crispy tortilla chips with cheese, jalapeños, sour cream & guacamole",
+      "price": 349,
+      "category": "Starters",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1582169296194-e4d644c48063?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "s5",
+      "name": "Prawn Tempura",
+      "description": "Japanese-style battered prawns with sweet chili sauce",
+      "price": 449,
+      "category": "Starters",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "s6",
+      "name": "Mediterranean Hummus Platter",
+      "description": "House-made hummus with olives, feta, and warm pita bread",
+      "price": 299,
+      "category": "Starters",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1571070703993-67580c53b9b5?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "m1",
+      "name": "Truffle Mushroom Risotto",
+      "description": "Creamy arborio rice with wild mushrooms and truffle oil",
+      "price": 549,
+      "category": "Main Course",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1476124369491-f23fdf5b1e98?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "m2",
+      "name": "Grilled Salmon Steak",
+      "description": "Atlantic salmon with lemon butter sauce, asparagus & mashed potatoes",
+      "price": 749,
+      "category": "Main Course",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "m3",
+      "name": "Margherita Pizza",
+      "description": "Wood-fired pizza with San Marzano tomatoes, mozzarella & fresh basil",
+      "price": 449,
+      "category": "Main Course",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "m4",
+      "name": "Lamb Rogan Josh",
+      "description": "Slow-cooked lamb in aromatic spices, served with naan and rice",
+      "price": 699,
+      "category": "Main Course",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "m5",
+      "name": "Thai Green Curry",
+      "description": "Coconut-based curry with vegetables, tofu, and jasmine rice",
+      "price": 499,
+      "category": "Main Course",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "b1",
+      "name": "Signature Cold Coffee",
+      "description": "Rich cold brew with vanilla ice cream and chocolate drizzle",
+      "price": 249,
+      "category": "Beverages",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "b2",
+      "name": "Fresh Fruit Smoothie",
+      "description": "Blend of seasonal fruits, yogurt, and honey",
+      "price": 199,
+      "category": "Beverages",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "b3",
+      "name": "Classic Mojito",
+      "description": "Refreshing mint, lime, and soda (Virgin or Regular)",
+      "price": 199,
+      "category": "Beverages",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "d1",
+      "name": "Chocolate Lava Cake",
+      "description": "Warm molten chocolate cake with vanilla bean ice cream",
+      "price": 299,
+      "category": "Desserts",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "d2",
+      "name": "New York Cheesecake",
+      "description": "Creamy cheesecake with berry compote and whipped cream",
+      "price": 349,
+      "category": "Desserts",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1533134242820-b25a0b70674e?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "d3",
+      "name": "Tiramisu",
+      "description": "Classic Italian dessert with espresso-soaked ladyfingers and mascarpone",
+      "price": 329,
+      "category": "Desserts",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "g1",
+      "name": "Gamer's Combo Platter",
+      "description": "Loaded fries, onion rings, mozzarella sticks & chicken nuggets",
+      "price": 399,
+      "category": "Gaming Snacks",
+      "veg": false,
+      "image": "https://images.unsplash.com/photo-1599146318054-63bfcd617c33?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "g2",
+      "name": "Classic French Fries",
+      "description": "Crispy golden fries with choice of dips (cheese, garlic, peri-peri)",
+      "price": 199,
+      "category": "Gaming Snacks",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop"
+    },
+    {
+      "id": "g3",
+      "name": "Paneer Tikka Bites",
+      "description": "Spiced cottage cheese cubes with mint chutney",
+      "price": 279,
+      "category": "Gaming Snacks",
+      "veg": true,
+      "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&h=300&fit=crop"
+    }
+  ]
+}
