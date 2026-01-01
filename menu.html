@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore MYSTERIA's gourmet menu - from premium starters to exquisite desserts and gaming snacks.">
+    <title>Menu - MYSTERIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Josefin+Sans:wght@300;400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1 class="logo-text">MYSTERIA</h1>
+                    <p class="logo-tagline">Cafe · Diner · Games</p>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="location.html" class="nav-link">Location</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <h2 class="menu-hero-title">Our Menu</h2>
+            <p class="menu-hero-subtitle">Handcrafted with passion</p>
+        </div>
+    </section>
+
+    <!-- Search & Filters -->
+    <section class="menu-controls">
+        <div class="container">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search dishes..." aria-label="Search menu">
+            </div>
+            <div class="category-filters" id="categoryFilters">
+                <button class="category-pill active" data-category="all">All</button>
+                <button class="category-pill" data-category="Starters">Starters</button>
+                <button class="category-pill" data-category="Main Course">Main Course</button>
+                <button class="category-pill" data-category="Beverages">Beverages</button>
+                <button class="category-pill" data-category="Desserts">Desserts</button>
+                <button class="category-pill" data-category="Gaming Snacks">Gaming Snacks</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Grid -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be loaded here by JavaScript -->
+            </div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <p>No dishes found. Try a different search or category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Order Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3 class="logo-text">MYSTERIA</h3>
+                        <p class="footer-tagline">Where Gaming Meets Gourmet Dining</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>📞 +91 98765 43210</li>
+                        <li>📧 info@mysteria.cafe</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+                        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+                        <a href="#" aria-label="Twitter" target="_blank" rel="noopener">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MYSTERIA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

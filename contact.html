@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Place your order at MYSTERIA - Orders sent directly via Telegram for quick processing.">
+    <title>Contact & Order - MYSTERIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Josefin+Sans:wght@300;400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1 class="logo-text">MYSTERIA</h1>
+                    <p class="logo-tagline">Cafe · Diner · Games</p>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="menu.html" class="nav-link">Menu</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                        <li><a href="location.html" class="nav-link">Location</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h2 class="contact-hero-title">Place Your Order</h2>
+            <p class="contact-hero-subtitle">We'll receive it instantly via Telegram</p>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="form-section">
+        <div class="container">
+            <form class="order-form" id="orderForm">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" class="form-input" required minlength="2">
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone <span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX" required pattern="[0-9]{10}" maxlength="10">
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="optional">
+                </div>
+
+                <div class="form-group">
+                    <label for="orderDetails" class="form-label">Order Details <span class="required">*</span></label>
+                    <textarea id="orderDetails" name="orderDetails" class="form-textarea" rows="6" required placeholder="Enter your order details here..."></textarea>
+                    <span class="error-message" id="orderError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes" class="form-label">Additional Notes</label>
+                    <textarea id="notes" name="notes" class="form-textarea" rows="3" placeholder="Any special requests or instructions?"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large btn-full">Send Order to Telegram</button>
+                
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h3 class="logo-text">MYSTERIA</h3>
+                        <p class="footer-tagline">Where Gaming Meets Gourmet Dining</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>📞 +91 98765 43210</li>
+                        <li>📧 info@mysteria.cafe</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+                        <a href="#" aria-label="Facebook" target="_blank" rel="noopener">📘</a>
+                        <a href="#" aria-label="Twitter" target="_blank" rel="noopener">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MYSTERIA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Telegram configuration - REPLACE WITH YOUR BOT TOKEN AND CHAT ID
+        const TELEGRAM_BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE';
+        const TELEGRAM_CHAT_ID = 'YOUR_CHAT_ID_HERE';
+
+        // Get URL parameters if coming from menu page
+        const urlParams = new URLSearchParams(window.location.search);
+        const prefilledOrder = urlParams.get('order');
+        
+        if (prefilledOrder) {
+            document.getElementById('orderDetails').value = decodeURIComponent(prefilledOrder);
+        }
+
+        // Form validation and submission
+        const form = document.getElementById('orderForm');
+        const nameInput = document.getElementById('name');
+        const phoneInput = document.getElementById('phone');
+        const orderInput = document.getElementById('orderDetails');
+        const formMessage = document.getElementById('formMessage');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Clear previous errors
+            clearErrors();
+            
+            // Validate
+            let isValid = true;
+            
+            if (nameInput.value.trim().length < 2) {
+                showError('nameError', 'Name must be at least 2 characters');
+                nameInput.classList.add('error');
+                isValid = false;
+            }
+            
+            if (!/^[0-9]{10}$/.test(phoneInput.value)) {
+                showError('phoneError', 'Phone must be exactly 10 digits');
+                phoneInput.classList.add('error');
+                isValid = false;
+            }
+            
+            if (orderInput.value.trim().length === 0) {
+                showError('orderError', 'Order details are required');
+                orderInput.classList.add('error');
+                isValid = false;
+            }
+            
+            if (!isValid) return;
+            
+            // Prepare message
+            const formData = new FormData(form);
+            const now = new Date();
+            const timeString = now.toLocaleString('en-IN', { 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                hour12: true,
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric'
+            });
+            
+            const message = `🍽️ NEW ORDER FROM MYSTERIA\n\n` +
+                `👤 Name: ${formData.get('name')}\n` +
+                `📞 Phone: +91 ${formData.get('phone')}\n` +
+                `📧 Email: ${formData.get('email') || 'Not provided'}\n\n` +
+                `📋 ORDER:\n${formData.get('orderDetails')}\n\n` +
+                `💬 NOTES:\n${formData.get('notes') || 'None'}\n\n` +
+                `🕒 Time: ${timeString}`;
+            
+            // Send to Telegram
+            try {
+                const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: message,
+                        parse_mode: 'HTML'
+                    })
+                });
+                
+                const data = await response.json();
+                
+                if (data.ok) {
+                    showMessage('✅ Order sent successfully! We\'ll contact you shortly.', 'success');
+                    form.reset();
+                } else {
+                    showMessage('❌ Failed to send order. Please call us at +91 98765 43210', 'error');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                showMessage('❌ Connection error. Please try again or call +91 98765 43210', 'error');
+            }
+        });
+
+        function showError(elementId, message) {
+            document.getElementById(elementId).textContent = message;
+        }
+
+        function clearErrors() {
+            document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+            document.querySelectorAll('.form-input, .form-textarea').forEach(el => el.classList.remove('error'));
+            formMessage.textContent = '';
+            formMessage.className = 'form-message';
+        }
+
+        function showMessage(message, type) {
+            formMessage.textContent = message;
+            formMessage.className = `form-message ${type}`;
+            
+            if (type === 'success') {
+                setTimeout(() => {
+                    formMessage.textContent = '';
+                    formMessage.className = 'form-message';
+                }, 5000);
+            }
+        }
+
+        // Clear error on input
+        [nameInput, phoneInput, orderInput].forEach(input => {
+            input.addEventListener('input', () => {
+                input.classList.remove('error');
+                const errorId = input.id + 'Error';
+                document.getElementById(errorId).textContent = '';
+            });
+        });
+    </script>
+</body>
+</html>
